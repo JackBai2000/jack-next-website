@@ -1,8 +1,7 @@
-import { Route, Routes, Link } from "react-router-dom";
-
+import 'tailwindcss/tailwind.css'
 
 export default function App(){
     return (
-        <h1>App</h1>
+        <h1 class="text-green-700">App</h1>
     )
 }

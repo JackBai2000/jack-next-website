@@ -1,21 +1,38 @@
-export default function Navbar() {
-    return <nav className="nav">
-        <a href="/" className="site-title">Site Name</a>
-        <ul className ="">
-            <li>
-                <a href="/projects">Projects</a>
-            </li>
-            <li>
-                <a href="/work">Work Experience</a>
-            </li>
-            <li>
-                <a href="/hobbies">Hobbies</a>
-            </li>
-            <li>
-                <a href="/contact">contact</a>
-            </li>
-        </ul>
+import React from "react";
+import Link from "next/link";
 
+const Navbar = () => {
+  return (
+    <>
+            <ul>
+              <li>
+                <Link href="/">
+                  <h1>Home</h1>
+                </Link>
+              </li>
+              <li>
+                <Link href="/Projects">
+                  <h1>Projects</h1>
+                </Link>
+              </li>
+              <li>
+                <Link href="/WorkExperience">
+                  <p>Work Experience</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/Hobbies">
+                  <p>Hobbies</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/ContactMe">
+                  <p>ContactMe</p>
+                </Link>
+              </li>
+            </ul>
+    </>
+  );
+};
 
-    </nav>
-}
+export default Navbar;
